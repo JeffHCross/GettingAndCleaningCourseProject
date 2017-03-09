@@ -1,0 +1,8 @@
+activity_labels <- read.table(file="UCI HAR Dataset/activity_labels.txt", header=FALSE)
+feature_list <- read.table(file="UCI HAR Dataset/features.txt", header=FALSE)
+dataset_test <- read.table(file="UCI HAR Dataset/test/X_test.txt", header=FALSE)
+dataset_train <- read.table(file="UCI HAR Dataset/train/X_train.txt", header=FALSE)
+labels_test <- read.table(file="UCI HAR Dataset/test/y_test.txt", header=FALSE)
+labels_train <- read.table(file="UCI HAR Dataset/train/y_train.txt", header=FALSE)
+subjects_test <- read.table(file="UCI HAR Dataset/test/subject_test.txt", header=FALSE)
+subjects_train <- read.table(file="UCI HAR Dataset/train/subject_train.txt", header=FALSE)
