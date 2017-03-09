@@ -12,10 +12,10 @@
 
 ### Section 2 - Viewing the already produced averages
 To view the data as produced by the author:
-1.    Download the UCI_HAR_Dataset_averages.txt into the current R working directory.
-2.    Run the following code:
-      <code>my_data <- read.table("UCI_HAR_Dataset_averages.txt", header = TRUE)
-      View(my_data)</code>
+1. Download the UCI_HAR_Dataset_averages.txt into the current R working directory.
+2. Run the following code:
+<code>my_data <- read.table("UCI_HAR_Dataset_averages.txt", header = TRUE)
+View(my_data)</code>
 ###### Execution code adapated from David Hood's blog on this project: https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/
 
 ### Section 3 - Running this code for reproducability
