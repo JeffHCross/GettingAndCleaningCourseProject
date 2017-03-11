@@ -43,4 +43,10 @@ UCI_HAR_master_df$activity <- factor(UCI_HAR_master_df$activity, levels = activi
 ## Use melt code from Reshaping Data Frames lesson
 UCI_HAR_melt <- melt(UCI_HAR_master_df, id=c("subject", "activity"), measure.vars = names(UCI_HAR_master_df[,c(-1,-2)]))
 UCI_HAR_averages_dataset <- dcast(UCI_HAR_melt, subject + activity ~ variable, mean)
-write.table(UCI_HAR_averages_dataset,file="tidy_averages.txt", row.names = FALSE)
+write.table(UCI_HAR_averages_dataset,file="UCI_HAR_Dataset_tidy_averages.txt", row.names = FALSE)
+
+## More cleanup
+rm(activity_labels, feature_list, UCI_HAR_melt)
+
+## Uncomment this code to produce the larger dataset into a file
+## write.table(UCI_HAR_master_df,file="UCI_HAR_Dataset_tidy_full_dataset.txt", row.names = FALSE)
