@@ -7,17 +7,18 @@ UCI\_HAR\_Dataset\_tidy\_averages.txt is a tidy dataset derived from the Human A
 For the purposes of this dataset, both the test set and train set of the original data were combined into one dataset, which was then transformed per the instructions in the Course Projet.  
 
 Specific transformations on the original dataset include:  
-1.  From the original "features" included in the Human Activity Recognition Using Smartphones Dataset, only time-domain measurements were extracted.
-2.  Specifically, the Fast Fourier Transform measurements were not included, as these were interpreted as transforms on the original data, not data itself.
-3.  Of the time-domain measurements that were extracted, only the mean and standard deviation measurements were extracted, per the instructions.
+1.  From the original "features" included in the Human Activity Recognition Using Smartphones Dataset, only time-domain measurements were extracted.  
+2.  Specifically, the Fast Fourier Transform measurements were not included, as these were interpreted as transforms on the original data, not data itself.  
+3.  Of the time-domain measurements that were extracted, only the mean and standard deviation measurements were extracted, per the instructions.  
 
 ### Section 2 - Data Dictionary for UCI\_HAR\_Dataset\_tidy\_averages.txt  
 Please note the following:  
-1.  All variable names except for subject and activity were taken as-is from the Human Activity Recognition Using Smartphones Dataset.  
-2.  If you do not use the instructions in the README&#46;md to read tidy\_averages into R, the variables names may be changed by check.names.  
-3.  Variables names from the Human Activity Recognition Using Smartphones Dataset were not modified for two reasons:  
+
+1.  All variable names except for subject and activity were taken as-is from the Human Activity Recognition Using Smartphones Dataset.
+2.  If you do not use the instructions in the README&#46;md to read tidy\_averages into R, the variables names may be changed by check.names.
+3.  Variables names from the Human Activity Recognition Using Smartphones Dataset were not modified for two reasons:
   * The author did not want to incorrectly interpret one of the original variables and mislabel the dataset as a result  
-  * The code in run\_analysis is designed to not be specific to a certain list of columns in the Human Activity dataset. If the column orders changed in the underlying dataset, the code would not have to change as a result.  This was done intentionally.  
+  * The code in run\_analysis is designed to not be specific to a certain list of columns in the Human Activity dataset. If the column orders changed in the underlying dataset, the code would not have to change as a result.  This was done intentionally.
 4. Per the Course Project instructions, all of the varibles were averaged based on the subject and activity. So the tBodyAcc-mean()-X is actually the average of all the tBodyAcc-mean()-X measurements in the original dataset.  This is not explictly stated in the Data defintiions below.
 
 | variable                    | R-class | Data definition                                                                                                                       |
