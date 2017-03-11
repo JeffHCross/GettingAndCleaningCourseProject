@@ -34,3 +34,10 @@ To use the run\_analysis.R file to reproduce the author's dataset:
 6. Two files will be created as a result of execution:
    * UCI\_HAR\_Dataset\_tidy.txt - A tidy version of the UCI HAR dataset, with the test & train data combined.  For more information on the dataset, see the Codebook.
    * UCI\_HAR\_Dataset\_averages.txt - A second tidy version of the UCI HAR dataset, containing only the averages for each activity, per subject.
+
+   
+| variable                    | R-class | Data definition                                                                                                                       |
+|-----------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------|
+| subject                     | int     | Numeric designator of the volunteer performing the activities in the Human Activity Recognition Using Smartphones Dataset experiments |
+| activity                    | Factor  | Descriptive term descibing which of the six acitivites were being performed by the subject when the measurements were taken           |
+| tBodyAcc-mean()-X           | numeric | TBD                                                                                                                                   |
